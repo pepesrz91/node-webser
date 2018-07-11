@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ homepage }}</title>
+  </head>
+  <body>
+    {{> header}}
+    <p>Hello I am {{ name }} and I love to Code!!</p>
+    <ul>
+      {{#each likes}}
+        <li>{{ this }}</li>
+      {{/each}}
+    </ul>
+    {{> footer}}
+  </body>
+</html>
